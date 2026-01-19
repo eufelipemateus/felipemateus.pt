@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-pt">
   <head>
     <meta charset="UTF-8" />
@@ -16,7 +16,11 @@
     <link rel="preload" src="https://cdn.tailwindcss.com/3.4.17" as="script" />
     <link rel="preload" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" href="https://www.googletagmanager.com" />
-    <link rel="preload" href="https://unpkg.com/lucide@0.562.0/dist/umd/lucide.min.js" as="script" />
+    <link
+      rel="preload"
+      href="https://unpkg.com/lucide@0.562.0/dist/umd/lucide.min.js"
+      as="script"
+    />
     <script src="https://cdn.tailwindcss.com/3.4.17"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
@@ -41,58 +45,102 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <link
       rel="preload"
-      href="https://www.googletagmanager.com/gtag/js?id=G-DYK5TT26WL"
+      href="https://www.googletagmanager.com/gtag/js?id=GTM-PLBBX5L"
       as="script"
     />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-DYK5TT26WL"
-    ></script>
+    <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-DYK5TT26WL");
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PLBBX5L");
     </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body class="bg-gray-50 text-gray-900">
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Felipe Mateus",
-      "url": "https://felipemateus.pt",
-      "logo": "https://felipemateus.pt/assets/img/logo.png",
-      "email": "contato@felipemateus.pt",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "PT"
-      },
-      "sameAs": ["https://www.linkedin.com/company/eufelipemateus"],
-      "founder": {
-        "@type": "Person",
-        "name": "Felipe Mateus Rocha Martins",
-        "jobTitle": "Desenvolvedor Senior",
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Felipe Mateus",
+        "url": "https://felipemateus.pt",
+        "logo": "https://felipemateus.pt/assets/img/logo.png",
         "email": "contato@felipemateus.pt",
-        "url": "https://felipemateus.com/eufelipemateus"
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "PT"
+        },
+        "sameAs": ["https://www.linkedin.com/company/eufelipemateus"],
+        "founder": {
+          "@type": "Person",
+          "name": "Felipe Mateus Rocha Martins",
+          "jobTitle": "Desenvolvedor Senior",
+          "email": "contato@felipemateus.pt",
+          "url": "https://felipemateus.com/eufelipemateus"
+        }
       }
-    }
     </script>
 
     <!-- Loading Overlay -->
-    <div id="loading-overlay" style="position:fixed;z-index:9999;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,1);transition:opacity 0.3s;">
-      <div style="text-align:center;">
-        <svg width="60" height="60" viewBox="0 0 50 50" style="margin:auto;display:block;">
-          <circle cx="25" cy="25" r="20" fill="none" stroke="#1e40af" stroke-width="5" stroke-linecap="round" stroke-dasharray="31.4 31.4" stroke-dashoffset="0">
-            <animateTransform attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="1s" repeatCount="indefinite"/>
+    <div
+      id="loading-overlay"
+      style="
+        position: fixed;
+        z-index: 9999;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 1);
+        transition: opacity 0.3s;
+      "
+    >
+      <div style="text-align: center">
+        <svg
+          width="60"
+          height="60"
+          viewBox="0 0 50 50"
+          style="margin: auto; display: block"
+        >
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+            fill="none"
+            stroke="#1e40af"
+            stroke-width="5"
+            stroke-linecap="round"
+            stroke-dasharray="31.4 31.4"
+            stroke-dashoffset="0"
+          >
+            <animateTransform
+              attributeName="transform"
+              type="rotate"
+              from="0 25 25"
+              to="360 25 25"
+              dur="1s"
+              repeatCount="indefinite"
+            />
           </circle>
         </svg>
-        <div style="margin-top:1rem;font-weight:bold;color:#1e40af;font-size:1.2rem;">Carregando...</div>
+        <div
+          style="
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #1e40af;
+            font-size: 1.2rem;
+          "
+        >
+          Carregando...
+        </div>
       </div>
     </div>
-
 
     <!-- Navbar -->
     <nav class="fixed w-full z-50 glass border-b border-gray-200">
@@ -396,11 +444,11 @@
 
     <script>
       lucide.createIcons();
-      window.addEventListener('load', function() {
-        setTimeout(function() {
-          document.getElementById('loading-overlay').style.opacity = '0';
-          setTimeout(function() {
-            document.getElementById('loading-overlay').style.display = 'none';
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.getElementById("loading-overlay").style.opacity = "0";
+          setTimeout(function () {
+            document.getElementById("loading-overlay").style.display = "none";
           }, 300);
         }, 100);
       });
